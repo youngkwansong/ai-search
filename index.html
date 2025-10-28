@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Conversation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <style>
+      /* Custom scrollbar for a better look */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1c1c27;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a4a6a;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5a5a8a;
+      }
+      .prose-custom {
+        color: #d1d5db; /* text-gray-300 */
+      }
+      .prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4, .prose-custom h5, .prose-custom h6 {
+        color: #ffffff;
+      }
+      .prose-custom a {
+        color: #818cf8; /* indigo-400 */
+      }
+      .prose-custom a:hover {
+        color: #a5b4fc; /* indigo-300 */
+      }
+      .prose-custom ul > li::before {
+        background-color: #6b7280; /* gray-500 */
+      }
+      .prose-custom blockquote {
+        color: #9ca3af; /* gray-400 */
+        border-left-color: #4f46e5; /* indigo-600 */
+      }
+      .prose-custom code {
+        color: #f9fafb; /* gray-50 */
+        background-color: #1f2937; /* gray-800 */
+        padding: 0.2em 0.4em;
+        border-radius: 0.25rem;
+      }
+      .prose-custom pre {
+        background-color: #111827; /* gray-900 */
+        border-radius: 0.5rem;
+        padding: 1rem;
+      }
+      .prose-custom pre code {
+        background-color: transparent;
+        padding: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#11111B] text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

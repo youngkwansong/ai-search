@@ -1,0 +1,5 @@
+{
+  "name": "Gemini AI Conversation",
+  "description": "A sleek and modern chatbot interface that leverages the Gemini API with Google Search grounding to provide informative and referenced answers. Features include markdown rendering, conversation history, and a copy-to-clipboard function.",
+  "requestFramePermissions": []
+}
