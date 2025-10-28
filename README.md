@@ -19,4 +19,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1q9Sed6tTT9pu26u9VZgIdh
 3. Run the app:
    `npm run dev`
 4. Build the app:
-   `npm rub build`
+   `npm run build`
