@@ -1,12 +1,9 @@
-
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import { Message, Role } from '../types';
 
-if (!process.env.API_KEY) {
-    console.warn("API_KEY environment variable not set. Using a placeholder. Please set your API key.");
-}
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "YOUR_API_KEY_HERE" });
+// The application now relies exclusively on the process.env.API_KEY.
+// If the key is not set, the API call will fail and the error will be displayed in the UI.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateResponse = async (history: Message[]) => {
     const model = 'gemini-2.5-flash';
