@@ -43,6 +43,11 @@ const ModelMessage: React.FC<{ content: string; references?: Message['references
       contentRef.current.querySelectorAll('pre code').forEach((block) => {
         window.hljs.highlightElement(block as HTMLElement);
       });
+      // Add target="_blank" and rel="noopener noreferrer" to all <a> tags
+      contentRef.current.querySelectorAll('a').forEach((link) => {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      });
     }
   }, [content]);
 
